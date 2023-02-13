@@ -6,7 +6,7 @@ Vagrant.configure(2) do |config|
     config.vm.network "private_network", bridge: "Default Switch"
     config.vm.synced_folder ".", "/vagrant", disabled: true
 
-    rke2_version = "v1.24.9+rke2r2"
+    rke2_version = "v1.26.0+rke2r2"
 
     config.vm.define :server do |server|
       server.vm.host_name = "server"
